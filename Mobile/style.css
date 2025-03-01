@@ -1,0 +1,89 @@
+.calculator {
+    display: inline-block;
+    background-color: rgb(31, 31, 31);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    border: 5px solid #1c1c1c;
+    width: 300px; /* Фіксована ширина для мобільної версії */
+}
+
+/* Поле введення */
+#display {
+    width: 94%; /* Розтягується на всю ширину калькулятора */
+    height: 50px;
+    font-size: 3rem;
+    border-radius: 10px;
+    border: 5px solid #383838;
+    text-align: right;
+    padding: 5px;
+    font-family:'VT323';
+    color: #1c1c1c;
+}
+
+/* Контейнер для кнопок */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 кнопки в ряд */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Стилі кнопок */
+button {
+    height: 60px;
+    background-color: rgb(75, 75, 75);
+    color: black;
+    border: 5px solid #383838;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: rgb(67, 67, 67);
+    transition: 250ms;
+}
+
+/* Спеціальні кнопки */
+button.clear, button.calc, button.back {
+    background-color: rgb(124, 124, 124);
+}
+
+button.clear:hover, button.calc:hover, button.back:hover {
+    background-color: rgb(100, 100, 100);
+    transition: 250ms;
+}
+
+/* Футер */
+.calc-footer {
+    
+    color:rgb(75, 75, 75);
+    text-align: center; /* Центрування */
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight:bolder;
+text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 320px) {
+    .calculator {
+        width: 280px; /* Трохи зменшимо для маленьких телефонів */
+    }
+
+    button {
+        height: 50px;
+        font-size: 1.3rem;
+    }
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+    font-family: 'Trebuchet MS';
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+}
