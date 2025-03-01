@@ -10,3 +10,4 @@ function toDisp(button){
 }
 function clr(){disp.value = '';}
 function calc(){disp.value = eval(disp.value);}
+function back() {disp.value = disp.value.slice(0, -1);}
