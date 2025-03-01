@@ -39,7 +39,7 @@ body{
 
 button{
  height: 50px;
- background-color: rgb(75, 75, 75);;
+ background-color: rgb(75, 75, 75);
  color: black;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 border: 5px solid #383838;
@@ -66,3 +66,29 @@ button.clear:hover{
 button.calc{
     background-color: rgb(124, 124, 124);
 }
+
+button.calc:hover{
+    background-color: rgb(100, 100, 100);
+    transition: 250ms;
+}
+
+button.back{
+    background-color: rgb(124, 124, 124);
+}
+
+button.back:hover{
+    background-color: rgb(100, 100, 100);
+    transition: 250ms;
+}
+
+.calc-footer {
+    
+    color:rgb(75, 75, 75);
+    text-align: center; /* Центрування */
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight:bolder;
+text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+    
